@@ -6,7 +6,7 @@ if ($host.Name -eq 'ConsoleHost')
 Import-Module -Name Terminal-Icons
 Import-Module -Name CompletionPredictor
 
-oh-my-posh --init --shell pwsh --config "https://gist.githubusercontent.com/Anwarvic/ed9661c3249aa2349b4be7d81038e109/raw/4bb1f251151d777d70a351814c61d1264a41f66e/anwar.om.json" | Invoke-Expression
+oh-my-posh --init --shell pwsh --config "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/atomic.omp.json" | Invoke-Expression
 
 $env:VIRTUAL_ENV_DISABLE_PROMPT=1
 
