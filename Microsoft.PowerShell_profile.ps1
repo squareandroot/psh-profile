@@ -5,6 +5,7 @@ if ($host.Name -eq 'ConsoleHost')
 
 Import-Module -Name Terminal-Icons
 Import-Module -Name CompletionPredictor
+Import-Module -Name Microsoft.WinGet.CommandNotFound
 
 oh-my-posh --init --shell pwsh --config "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/atomic.omp.json" | Invoke-Expression
 
@@ -16,3 +17,4 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+
