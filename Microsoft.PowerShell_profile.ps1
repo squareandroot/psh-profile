@@ -7,7 +7,7 @@ Import-Module -Name Terminal-Icons
 Import-Module -Name CompletionPredictor
 Import-Module -Name Microsoft.WinGet.CommandNotFound
 
-oh-my-posh --init --shell pwsh --config "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/atomic.omp.json" | Invoke-Expression
+oh-my-posh --init --shell pwsh --config "~\Documents\PowerShell\atomic.omp.json" | Invoke-Expression
 
 $env:VIRTUAL_ENV_DISABLE_PROMPT=1
 
