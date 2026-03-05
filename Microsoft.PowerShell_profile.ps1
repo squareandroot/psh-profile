@@ -15,6 +15,9 @@ Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadLineOption -PredictionViewStyle ListView
 # Set-PSReadLineOption -EditMode Emacs
 
+Set-PSReadLineKeyHandler -Key "Tab" -Function NextSuggestion
+Set-PSReadLineKeyHandler -Key "Shift+Tab" -Function PreviousSuggestion
+
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
